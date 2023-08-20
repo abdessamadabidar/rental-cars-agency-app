@@ -75,7 +75,7 @@ class UserController extends Controller
             return view('user.email_already_verified', compact('user'));
         }
         $user->fill(['email_verified_at' => time()])->save();
-        $notifyAdmin = new Notification(['title' => 'Nouveau compte activé', 'content' => 'Un nouveau compte a été créé par le client ' . $user->first_name . ' ' . $user->last_name, 'user_id' => 1,]);
+        $notifyAdmin = new Notification(['title' => 'Nouveau compte activé par ' . $user->first_name . ' ' . $user->last_name, 'content' => 'Un nouveau compte a été créé par le client ' . $user->first_name . ' ' . $user->last_name, 'user_id' => 1]);
         $notifyClient = new Notification(['title' => 'Compte AutoRent activé', 'content' => 'Monsieur ' . $user->first_name . ' ' . $user->last_name . ' votre compte AutoRent à bien été activé', 'user_id' => $user->id]);
         $notifyClient->send();
         $notifyAdmin->send();

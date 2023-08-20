@@ -50,7 +50,7 @@ class LoginController extends Controller
 
             $loginRequest->session()->invalidate();
             Mail::to($user->email)->send(new UserMail($user));
-            return back()->withErrors(['error' => 'Merci de bien vouloir vérifier votre boîte mail pour activer votre compte '])->onlyInput('email');
+            return back()->withErrors(['warning' => 'Merci de bien vouloir vérifier votre boîte mail pour activer votre compte '])->onlyInput('email');
         }
         return back()->withErrors(['error' => 'Email ou Mot de passe incorrect'])->onlyInput('email');
     }
