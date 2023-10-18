@@ -1,6 +1,6 @@
 <x-master title="compte active">
-    <section class="login-register-container">
-        <img src="{{ asset('images/agadir.jpg') }}" alt="" class="bg-image">
+    <section class="index-container">
+        <img src="{{asset('images/frontsvg.svg')}}" alt="" width="400" height="400">
         <div class="container">
             <div
                 class="card  w-75 m-auto p-5 d-flex flex-column flex-nowrap justify-content-center align-items-center gap-4"
@@ -10,10 +10,10 @@
                 <img src="{{ asset('images/icons8-email.svg') }}" alt="" />
                 <h5>Bonjour <span class="text-uppercase" style="color:#ff734f;">{{ $user->first_name }}</span></h5>
                 <p style="text-align: center;">
-                    Merci, votre email a ete verifie, votre compte maintenant
+                    Merci, votre email a été verifié, votre compte maintenant
                     est active. <br />
-                    S'il vous plait utilisez le lien ci dessous pour se
-                    connecter a votre compte
+                    S'il vous plait utilisez le lien ci-dessous pour se
+                    connecter à votre compte
                 </p>
                 <a
                     href="{{ route('login') }}"

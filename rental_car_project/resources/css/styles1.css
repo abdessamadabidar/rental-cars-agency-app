@@ -1,6 +1,6 @@
-/*@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");*/
-/*@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");*/
-/*@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 header {
 	position: sticky;
@@ -78,6 +78,7 @@ a:link {
 	font-weight: 600;
 	text-align: center;
 	margin-bottom: 1.875rem;
+    color: white;
 }
 
 .colored-title {
@@ -89,6 +90,21 @@ a:link {
 	text-align: center;
 	margin-bottom: 0.938rem;
 	font-size: 1rem;
+}
+
+.btn__search {
+    background-color: #ff734f;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 8px;
+    opacity: 0.8;
+    width: 100%;
+    text-align: center;
+}
+
+.btn__search:hover {
+    color: #fff;
+    opacity: 1;
 }
 
 .svg {
@@ -106,18 +122,35 @@ a:link {
 }
 .section-heading {
 	width: 100%;
-	font-size: 1.563rem;
+	font-size: 1.25rem;
 	font-weight: 500;
 	margin: 1.563rem 0;
 }
 
-.section1-container {
-	min-height: calc(100vh - 70px);
+.index-container {
+	min-height: 100vh ;
 	overflow-x: hidden;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+    align-items: center;
+    position: relative;
+    row-gap: 20px;
 }
+
+.index-container::after {
+    content: '';
+    background:  url("../../public/images/background.svg");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -99;
+
+}
+
+
+
+
 
 .section2-container {
 	overflow-x: hidden;
@@ -569,4 +602,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 	.reverse-order {
 		order: 2;
 	}
+
+    .index-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
 }

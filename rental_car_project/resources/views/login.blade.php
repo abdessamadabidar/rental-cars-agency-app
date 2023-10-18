@@ -1,6 +1,5 @@
 <x-master title="Login" xmlns="http://www.w3.org/1999/html">
-    <section class="login-register-container">
-        <img src="{{ asset('images/agadir.jpg') }}" alt="" class="bg-image">
+    <section class="index-container">
         <div class="container  py-5">
             <div class="row d-flex justify-content-center align-items-center px-2">
                 <div class="col col-xl-10">

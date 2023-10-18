@@ -21,7 +21,6 @@
       <path value="$PROJECT_DIR$/rental_car_project/vendor/nette/schema" />
       <path value="$PROJECT_DIR$/rental_car_project/vendor/nette/utils" />
       <path value="$PROJECT_DIR$/rental_car_project/vendor/nikic/php-parser" />
-      <path value="$PROJECT_DIR$/rental_car_project/vendor/league/commonmark" />
       <path value="$PROJECT_DIR$/rental_car_project/vendor/league/config" />
       <path value="$PROJECT_DIR$/rental_car_project/vendor/league/flysystem" />
       <path value="$PROJECT_DIR$/rental_car_project/vendor/league/flysystem-local" />
@@ -36,7 +35,6 @@
       <path value="$PROJECT_DIR$/rental_car_project/vendor/vlucas/phpdotenv" />
       <path value="$PROJECT_DIR$/rental_car_project/vendor/dflydev/dot-access-data" />
       <path value="$PROJECT_DIR$/rental_car_project/vendor/egulias/email-validator" />
-      <path value="$PROJECT_DIR$/rental_car_project/vendor/laravel/framework" />
       <path value="$PROJECT_DIR$/rental_car_project/vendor/laravel/pint" />
       <path value="$PROJECT_DIR$/rental_car_project/vendor/laravel/sail" />
       <path value="$PROJECT_DIR$/rental_car_project/vendor/laravel/sanctum" />
@@ -127,10 +125,13 @@
       <path value="$PROJECT_DIR$/rental_car_project/vendor/dompdf/dompdf" />
       <path value="$PROJECT_DIR$/rental_car_project/vendor/masterminds/html5" />
       <path value="$PROJECT_DIR$/rental_car_project/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/rental_car_project/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/rental_car_project/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/rental_car_project/vendor/laravel/framework" />
       <path value="$PROJECT_DIR$/rental_car_project/vendor/laravel/prompts" />
     </include_path>
   </component>
-  <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.1" />
   <component name="PhpStanOptionsConfiguration">
     <option name="transferred" value="true" />
   </component>

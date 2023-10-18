@@ -2,6 +2,15 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/rental_car_project/app" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/rental_car_project/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
+      <sourceFolder url="file://$MODULE_DIR$/rental_car_project/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
+      <sourceFolder url="file://$MODULE_DIR$/rental_car_project/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/rental_car_project/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/rental_car_project/tests/Feature" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/rental_car_project/tests/Unit" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/rental_car_project/vendor/barryvdh/laravel-dompdf" />
       <excludeFolder url="file://$MODULE_DIR$/rental_car_project/vendor/phenx/php-font-lib" />
       <excludeFolder url="file://$MODULE_DIR$/rental_car_project/vendor/phenx/php-svg-lib" />
@@ -9,10 +18,15 @@
       <excludeFolder url="file://$MODULE_DIR$/rental_car_project/vendor/masterminds/html5" />
       <excludeFolder url="file://$MODULE_DIR$/rental_car_project/vendor/sabberworm/php-css-parser" />
       <excludeFolder url="file://$MODULE_DIR$/rental_car_project/vendor/laravel/prompts" />
+      <excludeFolder url="file://$MODULE_DIR$/rental_car_project/vendor/laravel/framework" />
+      <excludeFolder url="file://$MODULE_DIR$/rental_car_project/vendor/league/commonmark" />
+      <excludeFolder url="file://$MODULE_DIR$/rental_car_project/vendor/psr/clock" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="boxicons" level="application" />
     <orderEntry type="library" name="chart.js" level="application" />
+    <orderEntry type="library" name="font-awesome" level="application" />
+    <orderEntry type="library" name="mdb-ui-kit" level="application" />
   </component>
 </module>

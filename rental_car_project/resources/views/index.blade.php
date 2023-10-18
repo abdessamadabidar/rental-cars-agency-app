@@ -1,10 +1,10 @@
 <x-master title="Home" :user="$user">
     <div class="container-fluid main-container p-0">
         <section class="index-container shadow-5-soft">
-            <img src="{{ asset('images/agadir.jpg') }}" alt="" class="bg-image-index">
+            <img src="{{asset('images/frontsvg.svg')}}" alt="" width="400" height="400">
             <div class="p-4 d-flex flex-column justify-content-center align-items-center">
                 <h1 class="title">Louez une voiture<span class="colored-title">en quelques clics</span></h1>
-                <h4 class="h4 subtitle">Déverrouillez-la 24h/24 avec l'appli et partez !</h4>
+                <h4 class="h4 subtitle text-white">Déverrouillez-la 24h/24 avec l'appli et partez !</h4>
                 @auth()
                     <a href="{{ route('users.index') }}" role="button" class="btn__search">Louer une voiture</a>
                 @endauth
@@ -13,6 +13,7 @@
                 @endguest
             </div>
         </section>
+
         <section class="section2-container p-0">
             <h4 class="h4 section-heading">Vos marques préférées</h4>
             <div class="marques_container mb-5">

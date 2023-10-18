@@ -1,6 +1,5 @@
 <x-master title="Register">
-    <section class="login-register-container">
-        <img src="{{ asset('images/agadir.jpg') }}" alt="" class="bg-image ">
+    <section class="index-container">
         <div class="container py-5 px-3 h-100">
             <div class="row justify-content-center align-items-center h-100">
                 <div class="col-12 col-lg-9 col-xl-7">
