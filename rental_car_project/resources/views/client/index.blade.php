@@ -1,7 +1,7 @@
 <x-main title="{{ $user->first_name }}" :user="$user">
     <div class="container-fluid px- py-4">
-        <div class="row">
-            <div class="col-12 col-lg-8">
+{{--        <div class="row">--}}
+{{--            <div class="col-12 col-lg-6">--}}
                 <section>
                     <div class="row gy-4">
                         @foreach($voitures as $voiture)
@@ -19,7 +19,7 @@
                         @endforeach
                     </div>
                 </section>
-            </div>
-        </div>
+{{--            </div>--}}
+{{--        </div>--}}
     </div>
 </x-main>

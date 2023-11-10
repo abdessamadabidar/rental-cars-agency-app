@@ -61,7 +61,7 @@ class CarController extends Controller
             }
         }
 
-         return to_route('voitures.index')->with('success', 'La voiture a ete ajoute avec succes');
+         return to_route('voitures.index')->with('success', 'La voiture a été ajoutée avec succès');
 
 
     }

@@ -629,7 +629,7 @@ input.form-control::-webkit-file-upload-button {
 .profil-image-container .round {
 	position: relative;
 	bottom: 0;
-	right: 15px;
+	right: 5px;
 	background-color: #fff;
 	width: 40px;
 	height: 40px;
@@ -638,6 +638,8 @@ input.form-control::-webkit-file-upload-button {
 	justify-content: center;
 	border-radius: 50%;
 	overflow: hidden;
+    z-index: 99;
+
 }
 
 .profil-image-container .round input[type="file"] {
@@ -748,6 +750,45 @@ input[type="file"]::-webkit-file-upload-button {
 .select-image:hover {
 	background: #f86642;
 }
+/* ========================= Alerts ============================ */
+
+.flashbag-master {
+    width: 100%;
+    position: absolute;
+}
+
+.flashbag-master::before {
+    content: '';
+    background-color: #212529;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: blur(5px) opacity(0.5);
+}
+
+
+.flashbag-main {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.flashbag-main::before {
+    content: '';
+    background-color: #212529;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    position: absolute;
+    top: -55px;
+    left: 0;
+    filter: blur(2px) opacity(0.5);
+}
+
 
 /* ========================= notifications ============================ */
 .notifications {
@@ -764,6 +805,12 @@ input[type="file"]::-webkit-file-upload-button {
 	background-color: #fff;
 	border-radius: 1.063rem;
 	padding: 0.625rem 1rem;
+}
+.message {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 /* ========== MEDIA QUERIES ==========*/

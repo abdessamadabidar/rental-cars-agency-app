@@ -1,7 +1,7 @@
 <x-master title="Home" :user="$user">
     <div class="container-fluid main-container p-0">
         <section class="index-container shadow-5-soft">
-            <img src="{{asset('images/frontsvg.svg')}}" alt="" width="400" height="400">
+            <img src="{{asset('images/undraw_order_ride_re_372k.svg')}}" alt="" width="600" height="600">
             <div class="p-4 d-flex flex-column justify-content-center align-items-center">
                 <h1 class="title">Louez une voiture<span class="colored-title">en quelques clics</span></h1>
                 <h4 class="h4 subtitle text-white">Déverrouillez-la 24h/24 avec l'appli et partez !</h4>
@@ -17,14 +17,18 @@
         <section class="section2-container p-0">
             <h4 class="h4 section-heading">Vos marques préférées</h4>
             <div class="marques_container mb-5">
-               @foreach($marques as $marque)
-                    <div class="d-flex  flex-nowrap gap-3 align-items-center">
-                        <div class="img__marque shadow-sm">
-                            <img src="{{ asset('storage/' . $marque->logo) }}" alt="" >
-                        </div>
-                        <span class="fw-semibold fs-5">{{ $marque->name }}</span>
-                    </div>
-               @endforeach
+                   <div class="card w-25 ">
+                       <img src="{{asset('images/volkswagen-3-logo-svg-vector.svg')}}" alt="" style="width: 100%;">
+                   </div>
+                <div class="card w-25 ">
+                    <img src="{{asset('images/audi-11-logo-png-transparent.png')}}" alt="" style="width: 100%;">
+                </div>
+                <div class="card w-25 ">
+                    <img src="{{asset('images/mercedes-benz-9-logo-png-transparent.png')}}" alt="" style="width: 100%;">
+                </div>
+                <div class="card w-25 ">
+                    <img src="{{asset('images/Renault-logo-2015-2048x2048-grand.png')}}" alt="" style="width: 100%;">
+                </div>
             </div>
             <h4 class="h4 section-heading">Des voitures adaptées à vos besoins</h4>
             <div class="row g-2 mb-5 justify-content-evenly">

@@ -26,6 +26,8 @@
 </head>
 <body class="p-0 m-0">
 @include('partials.flashbag-master')
+@include('partials.error-alert')
+@include('partials.warning-alert')
 <header>
     @auth()
         @if(Route::currentRouteName() !== 'register' && Route::currentRouteName() !== 'login')

@@ -58,7 +58,7 @@ class CarModelController extends Controller
         $updatedFormFields['name'] = $requestFields['name'];
         $updatedFormFields['brand_id'] = DB::table('marques')->where('name', $requestFields['brand'])->value('id');
         $modele->fill($updatedFormFields)->save();
-        return to_route('modeles.index')->with('success', 'Le modèle à été modifié avec succès');
+        return to_route('modeles.index')->with('success', 'Le modèle '.  $modele->name . ' à été modifié avec succès');
     }
 
     public function destroy(CarModel $modele) {

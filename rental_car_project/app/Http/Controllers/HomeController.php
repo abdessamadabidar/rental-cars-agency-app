@@ -24,10 +24,7 @@ class HomeController extends Controller
             Visits::create(['counter' => 1]);
         }
 
-
-
-        $marques = CarBrand::all();
         $user = Auth::user();
-        return view('index', compact('marques', 'user'));
+        return view('index', compact( 'user'));
     }
 }

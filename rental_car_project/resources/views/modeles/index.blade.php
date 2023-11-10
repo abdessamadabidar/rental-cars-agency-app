@@ -1,7 +1,6 @@
 <x-main title="modèle" :user="$user">
     <div class="container">
         <section class="mt-4">
-            @include('partials.flashbag-master')
             <div class="d-flex align-items-center mb-4">
                 <i class="bx bx-list-ul nav__icon"></i>
                 <h5 class="h5 m-0">La liste des modèles disponibles</h5>

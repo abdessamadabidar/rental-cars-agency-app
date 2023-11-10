@@ -48,15 +48,4 @@
         }
     };
 
-
-
-
-
-
-
-    // console.log(barColors);
-
-
-
-
 </script>

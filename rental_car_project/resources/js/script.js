@@ -16,6 +16,8 @@ const showMenu = (headerToggle, navbarId) => {
 };
 showMenu("header-toggle", "navbar");
 
+
+
 /*==================== LINK ACTIVE ====================*/
 const linkColor = document.querySelectorAll(".nav__link");
 

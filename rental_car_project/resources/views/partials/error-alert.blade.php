@@ -1,8 +1,8 @@
 @if($errors->has('error'))
     <div class="flashbag-master" id="error">
-        <x-alert type="danger">
+        <x-master-alert type="danger">
             {{ $errors->first('error') }}
-        </x-alert>
+        </x-master-alert>
     </div>
 @endif
 
@@ -11,5 +11,5 @@
     setTimeout(function (){
         error.classList.add('d-none');
 
-    }, 2000);
+    }, 4000);
 </script>

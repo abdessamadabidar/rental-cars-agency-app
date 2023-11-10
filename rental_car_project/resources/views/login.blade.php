@@ -3,8 +3,6 @@
         <div class="container  py-5">
             <div class="row d-flex justify-content-center align-items-center px-2">
                 <div class="col col-xl-10">
-                    @include('partials.error-alert')
-                    @include('partials.warning-alert')
                     <div class="card" style="border-radius: 1rem;">
                         <div class="row g-0">
                             <div class="col-md-6 col-lg-5 d-none d-md-flex align-items-center">

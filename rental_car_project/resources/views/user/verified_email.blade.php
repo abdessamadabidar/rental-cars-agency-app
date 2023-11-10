@@ -1,6 +1,5 @@
 <x-master title="compte active">
     <section class="index-container">
-        <img src="{{asset('images/frontsvg.svg')}}" alt="" width="400" height="400">
         <div class="container">
             <div
                 class="card  w-75 m-auto p-5 d-flex flex-column flex-nowrap justify-content-center align-items-center gap-4"
@@ -20,7 +19,7 @@
                     role="button"
                     style="background-color: #ff734f; text-decoration: none;"
                     class="link-light py-3 px-4"
-                >Se connecter a votre compte</a
+                >Se connecter à votre compte</a
                 >
             </div>
         </div>

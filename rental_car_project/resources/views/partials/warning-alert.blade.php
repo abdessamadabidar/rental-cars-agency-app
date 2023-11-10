@@ -1,8 +1,8 @@
 @if($errors->has('warning'))
     <div class="flashbag-master" id="warning">
-        <x-alert type="warning">
+        <x-master-alert type="warning">
             {{ $errors->first('warning') }}
-        </x-alert>
+        </x-master-alert>
     </div>
 @endif
 

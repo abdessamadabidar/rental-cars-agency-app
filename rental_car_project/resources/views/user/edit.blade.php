@@ -6,11 +6,11 @@
                     @method('PUT')
                     @csrf
                     <div class="avatar profil-image-container shadow-sm mb-4 p-2" >
-                        <div class="round shadow-1-soft">
+                        <div class="round shadow-1-soft" >
                             <input type="file" name="image" id="image"/>
                             <i class="fa fa-camera"></i>
                         </div>
-                        <img src="{{ asset('storage/' . $user->image) }}" alt="" style="border-radius: 50%; width: 100%; height: 100%; object-fit: cover;"/>
+                        <img src="{{ asset('storage/' . $user->image) }}" alt="" style="position: relative; top: -40px"/>
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-4">

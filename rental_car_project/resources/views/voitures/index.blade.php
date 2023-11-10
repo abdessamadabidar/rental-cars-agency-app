@@ -1,6 +1,5 @@
 <x-main title="voitures" :user="$user">
     <div class="container">
-        @include('partials.flashbag-master')
         <section class="mt-4">
             <div class="d-flex align-items-center justify-content-between mb-4">
                 <div class="d-flex align-items-center">

@@ -44,12 +44,13 @@ class CarBrandController extends Controller
         return view('marques.edit', compact('user', 'marque'));
     }
 
-    public function update(CarBrandRequest $carBrandRequest, CarBrand $carBrand) {
+    public function update(CarBrandRequest $carBrandRequest, CarBrand $marque) {
         $updatedFormFields = $carBrandRequest->validated();
         if($carBrandRequest->hasFile('logo')) {
             $updatedFormFields['logo'] = $carBrandRequest->file('logo')->store('brands', 'public');
         }
-        $carBrand->fill($updatedFormFields)->save();
+
+        $marque->fill($updatedFormFields)->save();
         return to_route('marques.index')->with('success', $updatedFormFields['name'] . ' à été ajoutée avec succès');
     }
 

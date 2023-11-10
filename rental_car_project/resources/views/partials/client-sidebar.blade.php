@@ -35,7 +35,7 @@
 
                     <a href="{{ route('clients.reservations', $user->id) }}" class="nav__link">
                         <i class="bx bx-time-five nav__icon"></i>
-                        <span class="nav__name">Reservations</span>
+                        <span class="nav__name">Réservations</span>
                     </a>
 
                     <a href="{{ route('client.messages', $user->id) }}" class="nav__link">

@@ -56,7 +56,7 @@ class UserController extends Controller
             $updatedFormFields['image'] = $profileRequest->file('image')->store('Users', 'public');
         }
         $user->fill($updatedFormFields)->save();
-        return to_route('home')->with('success', 'votre profile a été modifié avec succès');
+        return to_route('users.show', $user->id)->with('success', 'votre profile a été modifié avec succès');
     }
 
     public function destroy(User $user)

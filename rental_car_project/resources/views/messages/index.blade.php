@@ -14,7 +14,7 @@
                             @php
                                 $client = \App\Models\User::findOrFail($message->user_id);
                             @endphp
-                            <li class="list-group-item message px-3">
+                            <li class="list-group-item message px-3" >
                                 <div class="d-flex flex-nowrap align-items-center">
                                     <a href="{{ route('messages.show', $message->id) }}" class="stretched-link"></a>
                                     <i class="bx bx-message nav__icon"></i>

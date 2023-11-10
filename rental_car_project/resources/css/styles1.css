@@ -133,6 +133,7 @@ a:link {
 	display: flex;
 	flex-direction: column;
     align-items: center;
+    justify-content: center;
     position: relative;
     row-gap: 20px;
 }
@@ -277,6 +278,11 @@ a:link {
 .text-container p,
 .text-container h3 {
 	color: #fff;
+}
+
+.marques_container {
+    display: flex;
+    column-gap: 30px;
 }
 
 /* ================================= styling scroll bar ======================== */

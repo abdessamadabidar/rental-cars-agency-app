@@ -1,4 +1,4 @@
-<div class="col-12 col-md-6">
+<div class="col-12 col-md-4">
     <div class="card border shadow-0">
         <div id="carousel_{{ $voiture->id }}" class="carousel slide" data-mdb-ride="carousel">
             <div class="carousel-inner" style="height: 200px;">
@@ -90,7 +90,7 @@
                     <a
                         href="{{ route('reservations.create', $voiture->id) }}"
                         class="btn rounded shadow-0 text-white text-nowrap"
-                        style="background-color: #f86642; z-index: 999"
+                        style="background-color: #f86642; z-index: 99"
                     >
                         <img src="{{ asset('images/icons8-power.svg') }}" alt=""/>
                         Réserver

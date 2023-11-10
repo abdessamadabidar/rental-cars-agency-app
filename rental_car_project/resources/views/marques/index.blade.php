@@ -1,6 +1,5 @@
 <x-main title="Marques" :user="$user">
     <div class="container">
-        @include('partials.flashbag-master')
         <section class="mt-4">
             <div class="d-flex align-items-center mb-4">
                 <i class="bx bx-list-ul nav__icon"></i>

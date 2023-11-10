@@ -42,7 +42,7 @@
                 <div class="nav__items">
                     <h3 class="nav__subtitle">Agence</h3>
 
-                    <div class="nav__dropdown">
+                    <div class="nav__dropdown" >
                         <a href="{{ route('notifications.index') }}" class="nav__link">
                             <i class="bx bx-bell nav__icon"></i>
                             <span class="nav__name">Notifications</span>
@@ -92,14 +92,14 @@
                     <div class="nav__dropdown">
                         <a href="{{ route('modeles.index') }}" class="nav__link">
                             <i class="bx bx-cog nav__icon"></i>
-                            <span class="nav__name">Modeles</span>
+                            <span class="nav__name">Modèles</span>
                             <i class="bx bx-chevron-down nav__icon nav__dropdown-icon"></i>
                         </a>
 
                         <div class="nav__dropdown-collapse">
                             <div class="nav__dropdown-content">
-                                <a href="{{ route('modeles.create') }}" class="nav__dropdown-item">Ajouter modele</a>
-                                <a href="{{ route('modeles.index') }}" class="nav__dropdown-item">Consulter les modeles</a>
+                                <a href="{{ route('modeles.create') }}" class="nav__dropdown-item">Ajouter modèle</a>
+                                <a href="{{ route('modeles.index') }}" class="nav__dropdown-item">Consulter les modèles</a>
                             </div>
                         </div>
                     </div>
@@ -120,7 +120,7 @@
 
                     <a href="{{ route('reservations.index') }}" class="nav__link">
                         <i class="bx bx-line-chart nav__icon"></i>
-                        <span class="nav__name">Reservations</span>
+                        <span class="nav__name">Réservations</span>
                     </a>
 
                     <a href="{{ route('clients.index') }}" class="nav__link">
@@ -133,7 +133,7 @@
 
         <a href="{{ route('disconnect') }}" class="nav__link nav__logout">
             <i class="bx bx-log-out nav__icon"></i>
-            <span class="nav__name">déconnecter</span>
+            <span class="nav__name">Se déconnecter</span>
         </a>
     </nav>
 </div>

@@ -118,7 +118,7 @@
                     <p class="m-0">{{ $voiture->nbr_de_places }}</p>
                 </div>
                 <div class="info border-bottom">
-                    <h6 class="h6 m-0">prix :<span class="small fw-light"> /heure</span></h6>
+                    <h6 class="h6 m-0">Prix :<span class="small fw-light"> /jour</span></h6>
                     <p class="m-0"> {{ $voiture->prix }} <span class="fw-semibold">MAD</span></p>
                 </div>
                 <div class="info border-bottom">

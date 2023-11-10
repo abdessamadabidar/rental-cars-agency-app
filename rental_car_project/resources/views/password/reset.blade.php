@@ -1,11 +1,11 @@
 <x-master title="reinstaller le mot de passe">
-    <section class="login-register-container">
-        <img src="{{ asset('images/agadir.jpg') }}" alt="" class="bg-image">
+    <section class="index-container">
+
         <div class="container">
             <div class="card w-50 mx-auto">
                 <div class="card-header border-0">
                     <h6 class="brand__name mb-3">Auto Rent</h6>
-                    <span class="lead">Merci d'entrer un nouveau mot de passe</span>
+                    <span class="lead">Veuillez entrer un nouveau mot de passe</span>
                 </div>
                 <div class="card-body">
                     <form method="post" action="{{ route('password.reset', $user->id) }}">
