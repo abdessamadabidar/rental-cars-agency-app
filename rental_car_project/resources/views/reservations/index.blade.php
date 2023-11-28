@@ -1,4 +1,4 @@
-<x-main title="admin reservations" :user="$user">
+<x-main title="Tous les réservations" :user="$user">
     <div class="container">
         <section class="mt-4">
             <div class="d-flex align-items-center mb-4">

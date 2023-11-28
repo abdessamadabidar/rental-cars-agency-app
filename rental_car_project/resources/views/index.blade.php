@@ -15,21 +15,21 @@
         </section>
 
         <section class="section2-container p-0">
-            <h4 class="h4 section-heading">Vos marques préférées</h4>
-            <div class="marques_container mb-5">
-                   <div class="card w-25 ">
-                       <img src="{{asset('images/volkswagen-3-logo-svg-vector.svg')}}" alt="" style="width: 100%;">
-                   </div>
-                <div class="card w-25 ">
-                    <img src="{{asset('images/audi-11-logo-png-transparent.png')}}" alt="" style="width: 100%;">
-                </div>
-                <div class="card w-25 ">
-                    <img src="{{asset('images/mercedes-benz-9-logo-png-transparent.png')}}" alt="" style="width: 100%;">
-                </div>
-                <div class="card w-25 ">
-                    <img src="{{asset('images/Renault-logo-2015-2048x2048-grand.png')}}" alt="" style="width: 100%;">
-                </div>
-            </div>
+{{--            <h4 class="h4 section-heading">Vos marques préférées</h4>--}}
+{{--            <div class="marques_container mb-5">--}}
+{{--                   <div class="card w-25 ">--}}
+{{--                       <img src="{{asset('images/volkswagen-3-logo-svg-vector.svg')}}" alt="" style="width: 100%;">--}}
+{{--                   </div>--}}
+{{--                <div class="card w-25 ">--}}
+{{--                    <img src="{{asset('images/audi-11-logo-png-transparent.png')}}" alt="" style="width: 100%;">--}}
+{{--                </div>--}}
+{{--                <div class="card w-25 ">--}}
+{{--                    <img src="{{asset('images/mercedes-benz-9-logo-png-transparent.png')}}" alt="" style="width: 100%;">--}}
+{{--                </div>--}}
+{{--                <div class="card w-25 ">--}}
+{{--                    <img src="{{asset('images/Renault-logo-2015-2048x2048-grand.png')}}" alt="" style="width: 100%;">--}}
+{{--                </div>--}}
+{{--            </div>--}}
             <h4 class="h4 section-heading">Des voitures adaptées à vos besoins</h4>
             <div class="row g-2 mb-5 justify-content-evenly">
                 <div class="col-6 car-container">

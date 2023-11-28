@@ -22,7 +22,7 @@
                 labels: days,
                 datasets: [
                     {
-                        label: "Les revenue ce mois en DH",
+                        label: "nombre de clients s'inscrit ce mois",
                         fill: true,
                         borderColor: "rgb(89, 121, 192)",
                         data: clientsCounts,

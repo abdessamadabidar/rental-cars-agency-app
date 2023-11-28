@@ -1,4 +1,4 @@
-<x-main title="{{ $user->first_name }}" :user="$user">
+<x-main title="{{ $user->first_name }} {{ $user->last_name }}" :user="$user">
     <div class="container-fluid px- py-4">
 {{--        <div class="row">--}}
 {{--            <div class="col-12 col-lg-6">--}}

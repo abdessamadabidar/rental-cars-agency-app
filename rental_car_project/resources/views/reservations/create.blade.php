@@ -1,13 +1,12 @@
 <x-main title="compléter votre réservation" :user="$user">
     <div class="container">
         <section class="mt-4 vh-100">
-           @include('partials.error-alert')
             <div class="alert alert-info">
                 <h6 class="small fw-semibold">Veuillez s'il vous plait compléter votre réservation</h6>
                 <ul class="list-group-flush m-0">
-                    <li class="list-item m-0 p-0"><p class="small m-0 p-0">Impoter votre carte permis de conduire recto</p></li>
-                    <li class="list-item m-0 p-0"><p class="small m-0 p-0">Impoter votre carte permis de conduire verso</p></li>
-                    <li class="list-item m-0 p-0"><p class="small m-0 p-0">photo doit etre claire et ne depasse pas 10MB</p></li>
+                    <li class="list-item m-0 p-0"><p class="small m-0 p-0">Importer votre carte permis de conduire recto</p></li>
+                    <li class="list-item m-0 p-0"><p class="small m-0 p-0">Importer votre carte permis de conduire verso</p></li>
+                    <li class="list-item m-0 p-0"><p class="small m-0 p-0">La photo doit être claire et ne pas dépasser 10 Mo.</p></li>
                 </ul>
             </div>
             <div class="border px-5 p-4 rounded">

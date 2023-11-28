@@ -27,6 +27,21 @@ class ReservationController extends Controller
         Gate::authorize('viewAny', Reservation::class);
         $user = Auth::user();
         $reservations = Reservation::all();
+
+
+        // durée expirée logique
+        foreach ($reservations as $reservation) {
+            if ($reservation->status_id === 2) {
+                $date_fin = Carbon::createFromTimestamp($reservation->date_fin);
+                if(Carbon::now()->greaterThanOrEqualTo($date_fin)) {
+                    $reservation->fill(['isExpired' => true])->save();
+                    Car::where('id', $reservation->car_id)->update(['isRented' => false]);
+
+                }
+            }
+
+        }
+
         return view('reservations.index', compact('user', 'reservations'));
     }
 
@@ -78,6 +93,7 @@ class ReservationController extends Controller
             $newReservation['date_fin'] = $date_fin;
             $newReservation['permis_recto'] = $reservationRequest->file('permis_recto')->store('reservations', 'public');
             $newReservation['permis_verso'] = $reservationRequest->file('permis_verso')->store('reservations', 'public');
+            $newReservation['status_id'] = 1;
             Reservation::create($newReservation);
             $client = User::find($reservationRequest->input('client_id'));
             $notifyAdmin = new Notification(['title' => 'une nouvelle réservation realisée', 'content' => 'une nouvelle réservation à été créée par le client  ' . $client->first_name . ' ' . $client->last_name, 'user_id' => 1,]);
@@ -96,34 +112,19 @@ class ReservationController extends Controller
         $admin = User::where('role_id', 1)->first();
         $voiture = Car::find($reservation->car_id);
 
-        view()->share(compact('reservation', 'client', 'admin', 'voiture'));
-        $contrat = Pdf::loadView('reservations.contrat');
-        $pdf = $contrat->output();
-        $pdfPath = storage_path( '/app/temp/sample.pdf');
-        Storage::put($pdfPath, $pdf);
-
-        Mail::to($client->email)->send(new ReservationMail($reservation, $pdfPath));
-        unlink($pdfPath);
-
-
-//        /////////////////////////////////////////////////////////
-//        $date_debut = Carbon::createFromDate($reservation->date_debut);
-//        $date_fin = Carbon::createFromDate($reservation->date_fin);
-//        session(['id' => $reservation->id, 'timeout' => $date_debut->diffInRealMilliseconds($date_fin)]);
-//        die();
         $reservation->fill(['status_id' => 2])->save();
         Car::where('id', $reservation->car_id)->update(['isRented' => true]);
-        return back()->with('success', 'reservation acceptee');
+        return back()->with('success', 'réservation acceptée');
     }
 
     public function reject(Reservation $reservation) {
         $reservation->fill(['status_id' => 3])->save();
-        return back()->with('success', 'reservation rejetee');
+        return back()->with('success', 'réservation rejetée');
     }
 
     public function destroy(Reservation $reservation) {
         $reservation->delete();
-        return redirect()->route('reservations.index')->with('success', 'La reservation a ete supprimee avec succes');
+        return redirect()->route('reservations.index')->with('success', 'La réservation a ete supprimée avec succès');
     }
 
     public function download(Reservation $reservation) {

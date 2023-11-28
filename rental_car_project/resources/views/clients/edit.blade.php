@@ -10,7 +10,7 @@
                             <input type="file" name="image" id="image"/>
                             <i class="fa fa-camera"></i>
                         </div>
-                        <img src="{{ asset('storage/' . $client->image) }}" alt="" style="border-radius: 50%; width: 100%; height: 100%; object-fit: cover;"/>
+                        <img src="{{ asset('storage/' . $client->image) }}" alt="" style="position: relative; top: -40px"/>
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-4">

@@ -21,7 +21,7 @@
                                 name="modele"
                                 value="{{ old('modele') }}"
                             />
-                            <label class="form-label label" for="modele">Modele</label>
+                            <label class="form-label label" for="modele">Modèle</label>
                         </div>
                         @error('modele') <x-validation-error message="{{ $message }}" /> @enderror
                     </div>
@@ -121,7 +121,7 @@
                             name="prix"
                             value="{{ old('prix') }}"
                         />
-                        <label class="form-label label" for="priceHour">Prix par heure</label>
+                        <label class="form-label label" for="priceHour">Prix par jour</label>
                     </div>
                     @error('prix') <x-validation-error message="{{ $message }}" /> @enderror
                 </div>

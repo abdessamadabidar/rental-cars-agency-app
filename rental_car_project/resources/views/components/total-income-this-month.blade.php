@@ -27,7 +27,7 @@
                 labels: days,
                 datasets: [
                     {
-                        label: "Les revenue ce mois en DH",
+                        label: "Les revenues ce mois en DH",
                         fill: true,
                         borderColor: "rgb(75, 192, 192)",
                         data: revnues,

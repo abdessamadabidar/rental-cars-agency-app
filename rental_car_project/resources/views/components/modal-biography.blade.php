@@ -44,7 +44,7 @@
                             </div>
                             <p class=" lead pt-3 text-center text-md-start text-dark">
                                 Hello reader! My name is Abdessamad Abidar, I'm 21 years old, I'm passionately pursuing my journey in my second year as a software engineering student at <strong> ENSAH </strong>.
-                                I am immersing myself in the world of software engineering, learing and gaining invaluable knowledge in both theory and practice.
+                                I am immersing myself in the world of software engineering, learning and gaining invaluable knowledge in both theory and practice.
                                 I have honed my skills in various programming languages such as C, C++, and Java, utilizing them in the realm of problem-solving. I have a modest experience in web development
                                 using both front-end and back-end technologies, as well as frameworks.
                                 Additionally, my knowledge extends to version control systems like Git, enabling seamless collaboration on projects.

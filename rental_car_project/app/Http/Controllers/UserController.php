@@ -25,8 +25,8 @@ class UserController extends Controller
             $carburants = Fuel::all();
             return view('client.index', compact('user', 'voitures', 'marques', 'carburants'));
         }
-        $statistics['totalIncomePerMonth'] = DB::table('reservations')->whereMonth('created_at', now()->month)->sum('total');
-        $statistics['totalIncomePerDay'] = DB::table('reservations')->whereDay('created_at', now()->day)->sum('total');
+        $statistics['totalIncomePerMonth'] = DB::table('reservations')->where('status_id', 2)->whereMonth('created_at', now()->month)->sum('total');
+        $statistics['totalIncomePerDay'] = DB::table('reservations')->where('status_id', 2)->whereDay('created_at', now()->day)->sum('total');
         $statistics['numberOfCars'] = Car::count();
         $statistics['numberOfReservations'] = Reservation::count();
         $statistics['numberOfClients'] = User::where('role_id', 2)->count();

@@ -67,7 +67,7 @@
                 </div>
                 <div class="p-3 border rounded-3">
                     <p class="h5 fw-semibold m-0 text-nowrap">{{ $voiture->prix }} DH</p>
-                    <span class="small d-block text-center">par heure</span>
+                    <span class="small d-block text-center">Par jour</span>
                 </div>
             </div>
             <div class="d-flex flex-nowrap justify-content-end align-items-center gap-3 mt-4">

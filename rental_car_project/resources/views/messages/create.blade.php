@@ -13,8 +13,8 @@
                         <div>
                             <h5 class="h5 fs-5 mb-2 text-capitalize">adresse</h5>
                             <p class="lead m-0 fs-6">
-                                Sidi Abbad 1, Rsd 512 magasin 1 40000
-                                Marrakech
+                                Ctre Ait Youssef Ou Ali 32003
+                                Al-houceima
                             </p>
                         </div>
                     </div>
@@ -22,7 +22,7 @@
                         <img src="{{ asset('images/icons8-whatsapp.svg') }}" alt="" />
                         <div>
                             <h5 class="h5 fs-5 mb-2 text-capitalize">whatsapp</h5>
-                            <p class="lead m-0 fs-6">+212 6 08 84 44 77</p>
+                            <p class="lead m-0 fs-6">+212 6 08 32 44 77</p>
                         </div>
                     </div>
                     <div class="part">
@@ -30,7 +30,7 @@
                         <div>
                             <h5 class="h5 fs-5 mb-2 text-capitalize">agence</h5>
                             <p class="lead m-0 fs-6">
-                                +212 6 08 01 88 88 / +212 5 24 30 74 52
+                                +212 6 08 05 81 84 / +212 5 24 36 74 72
                             </p>
                         </div>
                     </div>
@@ -38,7 +38,7 @@
                         <img src="{{ asset('images/icons8-mail.svg') }}" alt="" />
                         <div>
                             <h5 class="h5 fs-5 mb-2 text-capitalize">email</h5>
-                            <p class="lead m-0 fs-6">abdessamad.abidar@gmail.com</p>
+                            <p class="lead m-0 fs-6">abdessamad.abidar@hotmail.com</p>
                         </div>
                     </div>
                 </div>

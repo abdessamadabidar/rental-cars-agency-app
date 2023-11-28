@@ -8,7 +8,6 @@
                     <ul class="list-group-flush m-0">
                         <li class="list-item m-0 p-0"><p class="small m-0 p-0">Vous allez recevoir un email de confirmation</p></li>
                         <li class="list-item m-0 p-0"><p class="small m-0 p-0">Veuillez confirmer votre modification cliquant sur le lien</p></li>
-                        <li class="list-item m-0 p-0"><p class="small m-0 p-0">Photo doit être claire et ne dépasse pas 10MO</p></li>
                     </ul>
                 </div>
                 <div class="card-body px-md-5" style="height: 60vh">
